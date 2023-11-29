@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="image">
+    <file>jiantou2.png</file>
+    <file>bcakground2.png</file>
+    <file>heisequseban.png</file>
+    <file>too.png</file>
+    <file>NAME.png</file>
+  </qresource>
+</RCC>

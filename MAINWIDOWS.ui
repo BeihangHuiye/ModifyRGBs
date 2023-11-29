@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>873</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>一键批量修改图片RGB颜色软件V1.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="color2qian">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>290</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>280</y>
+      <width>31</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-40</y>
+      <width>911</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/bcakground2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputpath">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>40</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid black; /* 设置边框为黑色，可以根据需要调整宽度 */
+border-radius: 15px; /* 设置边框圆角，可以根据需要调整 */</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color6hou">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>350</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color7hou">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>350</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>350</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/jiantou2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color2hou">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>290</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color8qian">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>350</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>280</y>
+      <width>791</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 85, 127, 100);
+border: 1px solid black; </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>330</y>
+      <width>641</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color1qian">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>290</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>350</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/jiantou2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>290</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/jiantou2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>280</y>
+      <width>21</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>290</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/jiantou2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>290</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/jiantou2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color3hou">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>290</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>350</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/jiantou2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color3qian">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>290</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>61</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/heisequseban.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color4qian">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>290</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="geometry">
+     <rect>
+      <x>742</x>
+      <y>300</y>
+      <width>81</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #ff66a3; /* 粉色 */ 
+/* 白色文字，可根据需要调整 */
+color: rgb(0, 0, 0);
+border-radius: 20px;
+padding: 5px 5px;
+font-size: 25px;
+font-weight: bold;
+border: 2px solid black; 
+}
+
+QPushButton:hover {
+background-color: rgba(150, 0, 127, 100); /* 鼠标悬停时的颜色 */}</string>
+    </property>
+    <property name="text">
+     <string>重置</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>30</y>
+      <width>221</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid black; </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/too.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="outputpath">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>120</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid black; /* 设置边框为黑色，可以根据需要调整宽度 */
+border-radius: 15px; /* 设置边框圆角，可以根据需要调整 */</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color4hou">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>290</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>228</x>
+      <y>280</y>
+      <width>31</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="output">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #ff66a3; /* 粉色 */ 
+/* 白色文字，可根据需要调整 */
+color: rgb(0, 0, 0);
+border-radius: 20px;
+padding: 5px 5px;
+font-size: 25px;
+font-weight: bold;
+border: 2px solid black; 
+}
+
+QPushButton:hover {
+background-color: rgba(150, 0, 127, 100); /* 鼠标悬停时的颜色 */}</string>
+    </property>
+    <property name="text">
+     <string>OUTPUT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color1hou">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>290</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>30</y>
+      <width>51</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid black; </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/NAME.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>290</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/jiantou2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>280</y>
+      <width>31</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>350</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource_rc.qrc">:/image/jiantou2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ModifyRGB">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>491</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #ff66a3; /* 粉色 */ 
+/* 白色文字，可根据需要调整 */
+color: rgb(0, 0, 0);
+border-radius: 20px;
+padding: 5px 5px;
+font-size: 25px;
+font-weight: bold;
+border: 2px solid black; 
+}
+
+QPushButton:hover {
+background-color: rgba(150, 0, 127, 100); /* 鼠标悬停时的颜色 */}</string>
+    </property>
+    <property name="text">
+     <string>一键批量修改RGB值</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color8hou">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>350</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>280</y>
+      <width>16</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color5hou">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>350</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="input">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: #ff66a3; /* 粉色 */ 
+/* 白色文字，可根据需要调整 */
+color: rgb(0, 0, 0);
+border-radius: 20px;
+padding: 5px 5px;
+font-size: 25px;
+font-weight: bold;
+border: 2px solid black; 
+}
+
+QPushButton:hover {
+background-color: rgba(150, 0, 127, 100); /* 鼠标悬停时的颜色 */}</string>
+    </property>
+    <property name="text">
+     <string>INPUT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color7qian">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>350</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color5qian">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>350</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="color6qian">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>350</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>label_4</zorder>
+   <zorder>color2qian</zorder>
+   <zorder>line_4</zorder>
+   <zorder>inputpath</zorder>
+   <zorder>color6hou</zorder>
+   <zorder>color7hou</zorder>
+   <zorder>label_10</zorder>
+   <zorder>color2hou</zorder>
+   <zorder>color8qian</zorder>
+   <zorder>line_6</zorder>
+   <zorder>color1qian</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_6</zorder>
+   <zorder>line_5</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>color3hou</zorder>
+   <zorder>label_13</zorder>
+   <zorder>color3qian</zorder>
+   <zorder>label_5</zorder>
+   <zorder>color4qian</zorder>
+   <zorder>pushButton_18</zorder>
+   <zorder>label</zorder>
+   <zorder>outputpath</zorder>
+   <zorder>color4hou</zorder>
+   <zorder>line_2</zorder>
+   <zorder>output</zorder>
+   <zorder>color1hou</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_9</zorder>
+   <zorder>line_3</zorder>
+   <zorder>label_11</zorder>
+   <zorder>ModifyRGB</zorder>
+   <zorder>color8hou</zorder>
+   <zorder>line</zorder>
+   <zorder>color5hou</zorder>
+   <zorder>input</zorder>
+   <zorder>color7qian</zorder>
+   <zorder>color5qian</zorder>
+   <zorder>color6qian</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

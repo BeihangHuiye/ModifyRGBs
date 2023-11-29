@@ -1,0 +1,77 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "E:/Workers/\u8f6f\u8457/\u4e00\u952e\u6279\u91cf\u4fee\u6539\u56fe\u7247RGB\u989c\u8272\u8f6f\u4ef6V1.0/MAIN.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "E:/Workers/\u8f6f\u8457/\u4e00\u952e\u6279\u91cf\u4fee\u6539\u56fe\u7247RGB\u989c\u8272\u8f6f\u4ef6V1.0/icon.ico"
+  },
+  {
+   "optionDest": "upx_dir",
+   "value": "E:/Workers/\u8f6f\u8457/\u4e00\u952e\u6279\u91cf\u4fee\u6539\u56fe\u7247RGB\u989c\u8272\u8f6f\u4ef6V1.0/upx"
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "E:/Workers/\u8f6f\u8457/\u4e00\u952e\u6279\u91cf\u4fee\u6539\u56fe\u7247RGB\u989c\u8272\u8f6f\u4ef6V1.0/icon.ico;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "E:/Workers/\u8f6f\u8457/\u4e00\u952e\u6279\u91cf\u4fee\u6539\u56fe\u7247RGB\u989c\u8272\u8f6f\u4ef6V1.0/MAINWIDOWS.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "E:/Workers/\u8f6f\u8457/\u4e00\u952e\u6279\u91cf\u4fee\u6539\u56fe\u7247RGB\u989c\u8272\u8f6f\u4ef6V1.0/resource_rc.py;."
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}
