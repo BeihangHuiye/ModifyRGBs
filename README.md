@@ -6,7 +6,7 @@
 
 关于软件的使用，我做了一个视频放在B站上，有想了解的可以自己去看看。
 
-[开源！一键批量修改图片RGB颜色软件V1.0简要功能介绍](https://www.bilibili.com/video/BV1na4y1f7Kf/)
+[开源！一键批量修改图片RGB颜色软件V1.0简要功能介绍 -- bilibili视频](https://www.bilibili.com/video/BV1na4y1f7Kf/)
 
 
 
