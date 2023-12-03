@@ -12,6 +12,7 @@ import cv2
 import numpy as np
 from PyQt5 import QtCore
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox, QColorDialog
 
 import json
@@ -25,7 +26,8 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)  # 初始化界面
         self.setWindowFlags(Qt.WindowCloseButtonHint | Qt.WindowMinimizeButtonHint)  # 窗口尺寸固定，禁止最大化按钮
-
+        icon = QIcon(':/image/icon.png')
+        self.setWindowIcon(icon)
         # 存储按钮的原始颜色
         self.color_dict = {
                            'color1qian': (255, 255, 255), 'color1hou': (255, 255, 255),
@@ -96,8 +98,10 @@ class MainWindow(QMainWindow):
                     hou_key = key.replace('qian', 'hou')
                     print(hou_key)
                     print(self.color_dict[hou_key])
-                    im[np.all(im == value, axis=-1)] = (self.color_dict[hou_key][2], self.color_dict[hou_key][1], self.color_dict[hou_key][0])
-                    cv2.imwrite(self.OutDir + "/" + im_name, im)
+                    # im[np.all(im == value, axis=-1)] = (self.color_dict[hou_key][2], self.color_dict[hou_key][1], self.color_dict[hou_key][0])
+                    bgr_value = (self.color_dict[hou_key][0], self.color_dict[hou_key][1], self.color_dict[hou_key][2])
+                    im[np.all(im == value, axis=-1)] = bgr_value
+                    cv2.imwrite(self.OutDir + "/" + im_name, cv2.cvtColor(im, cv2.COLOR_RGB2BGR))
                     print(self.OutDir + "/" + im_name)
                     print(self.color_dict)
                 else:
